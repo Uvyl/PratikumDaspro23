@@ -66,7 +66,26 @@ public class studiKasus223 {
         System.out.println("Status dana: TIDAK DIBERIKAN");
         System.out.println("Alasan: bukan juara 1,2, atau 3");
        }
+    }else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+    System.out.println("Status Pendanaan PKM (1 = lolos, 0 = tidak lolos): ");
     
+    if (statusPendanaan == 1) {
+        System.out.println("jumlah dokumen yang diupload (0-4)");
+        jumlahDokumen = galih.nextInt();
+        if (jumlahDokumen == 4) {
+            System.out.println("Status Dana: DIBERIKAN");
+            System.out.println("Alasan: PKM lolos dan dokumen lengkap");
+        } else {
+            System.out.println("Status Dana: TIDAK DIBERIKAN");
+            System.out.println("Alasan: Dokumen tidak lengkap, kurang " +(4 - jumlahDokumen) + "dokumen");
+        }
+    } else {
+        System.out.println("Status Dana: Tidak diberikan");
+        System.out.println("Alasan: Dokumen tidak lengkap, kurang " +(4-jumlahDokumen) + "dokumen");
+    }
+} else {
+    System.out.println("Status Dana: Tidak diberikan ");
+    System.out.println("Alasan: Kegiatan termasuk kategori lainnya");
 }
 galih.close();
     }
