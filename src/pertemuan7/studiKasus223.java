@@ -68,7 +68,7 @@ public class studiKasus223 {
        }
     }else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
     System.out.println("Status Pendanaan PKM (1 = lolos, 0 = tidak lolos): ");
-    
+    statusPendanaan = galih.nextInt();
     if (statusPendanaan == 1) {
         System.out.println("jumlah dokumen yang diupload (0-4)");
         jumlahDokumen = galih.nextInt();
