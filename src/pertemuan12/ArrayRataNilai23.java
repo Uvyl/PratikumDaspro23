@@ -5,11 +5,21 @@ import java.util.Scanner;
 public class ArrayRataNilai23 {
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int[] nilaiMhs = new int[10];
     int total = 0;
     int lulus = 0;
     double rata2;
     String predikat;
+
+  
+
+    System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlah = input.nextInt();
+         if (jumlah <= 0) {
+            System.out.println("Jumlah mahasiswa harus lebih dari 0.");
+            input.close();
+            return;
+        }
+     int[] nilaiMhs = new int[jumlah];
     for (int i = 0; i < nilaiMhs.length; i++) {
     System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
     nilaiMhs[i] = input.nextInt();
