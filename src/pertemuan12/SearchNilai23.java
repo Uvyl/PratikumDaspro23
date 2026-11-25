@@ -23,7 +23,7 @@ public class SearchNilai23 {
       }
     }
     if (!ditemukan) {
-    System.out.println("Nilai " + key + " tidak ditemukan.");
+    System.out.println("Nilai yang dicari tidak ditemukan  " + key + " tidak ada dalam array yang berisi " + n + "elemen");
         }
         input.close();
     }
