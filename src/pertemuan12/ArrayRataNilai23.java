@@ -9,7 +9,6 @@ public class ArrayRataNilai23 {
     int total = 0;
     double rata2;
     String predikat;
-
     for (int i = 0; i < nilaiMhs.length; i++) {
     System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
     nilaiMhs[i] = input.nextInt();
